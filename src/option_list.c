@@ -14,7 +14,7 @@ list *read_data_cfg(char *filename)
     list *options = make_list();
     while((line=fgetl(file)) != 0){
         ++nu;
-        strip(line);
+        // strip(line);
         switch(line[0]){
             case '\0':
             case '#':
